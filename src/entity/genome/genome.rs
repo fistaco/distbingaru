@@ -1,3 +1,4 @@
 pub trait Genome {
-    fn fitness(&mut self) -> f64;
+    fn fitness(&self) -> f64;
+    fn set_fitness(&mut self, fitness: f64);
 }

@@ -32,8 +32,8 @@ impl BinaryString {
 }
 
 impl Genome for BinaryString {
-    /// Sets and returns this `BinaryString`'s fitness value, which is computed as the sum of its
-    /// bits that are set to 1.
+    /// Computes and returns this `BinaryString`'s fitness value, which is computed as the sum of
+    /// its bits that are set to 1.
     fn fitness(&self) -> f64 {
         self.bits.iter().sum::<u8>() as f64
     }
